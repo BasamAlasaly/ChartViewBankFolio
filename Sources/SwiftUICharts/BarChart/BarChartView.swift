@@ -21,7 +21,7 @@ public struct BarChartView : View {
     public var valueSpecifier:String
     public var animatedToBack: Bool
     
-    @State private var touchLocation: CGFloat = 4.0
+    @State private var touchLocation: CGFloat = 2.0
     @State private var showValue: Bool = false
     @State private var showLabelValue: Bool = false
     @State private var currentValue: Double = 0 {
