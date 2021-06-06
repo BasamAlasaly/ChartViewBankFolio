@@ -106,21 +106,21 @@ public struct BarChartView : View {
                         self.showLabelValue = true
                     }
                 })
-                .onEnded({ value in
-                    if animatedToBack {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            withAnimation(Animation.easeOut(duration: 1)) {
+//                 .onEnded({ value in
+//                     if animatedToBack {
+//                         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                             withAnimation(Animation.easeOut(duration: 1)) {
 //                                 self.showValue = false
 //                                 self.showLabelValue = false
 //                                 self.touchLocation = -1
-                            }
-                        }
-                    } else {
+//                             }
+//                         }
+//                     } else {
 //                         self.showValue = false
 //                         self.showLabelValue = false
 //                         self.touchLocation = -1
-                    }
-                })
+//                     }
+//                 })
         )
             .gesture(TapGesture()
         )
