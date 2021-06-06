@@ -110,15 +110,15 @@ public struct BarChartView : View {
                     if animatedToBack {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                             withAnimation(Animation.easeOut(duration: 1)) {
-                                self.showValue = false
-                                self.showLabelValue = false
-                                self.touchLocation = -1
+//                                 self.showValue = false
+//                                 self.showLabelValue = false
+//                                 self.touchLocation = -1
                             }
                         }
                     } else {
-                        self.showValue = false
-                        self.showLabelValue = false
-                        self.touchLocation = -1
+//                         self.showValue = false
+//                         self.showLabelValue = false
+//                         self.touchLocation = -1
                     }
                 })
         )
